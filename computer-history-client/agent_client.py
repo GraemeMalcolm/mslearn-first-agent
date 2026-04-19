@@ -7,6 +7,7 @@ to submit prompts and handle responses.
 """
 
 import os
+import logging
 from typing import List, Dict, Any
 from dotenv import load_dotenv
 
@@ -18,6 +19,8 @@ from openai import OpenAI
 
 # Load environment variables
 load_dotenv()
+
+logger = logging.getLogger(__name__)
 
 class AgentClient:
     """Client for interacting with a Microsoft Foundry agent."""
@@ -92,9 +95,8 @@ class AgentClient:
             return assistant_message
             
         except Exception as e:
-            error_message = f"Error communicating with agent: {str(e)}"
-            print(error_message)
-            return error_message
+            logger.exception("Error communicating with agent")
+            return "An internal error occurred while communicating with the agent."
     
     def reset_conversation(self):
         """Clear the conversation history."""
