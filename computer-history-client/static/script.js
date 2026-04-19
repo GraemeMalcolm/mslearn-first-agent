@@ -130,11 +130,11 @@ function formatUrlsAsLinks(text) {
         .replace(/'/g, '&#039;');
 
     // Replace safe URLs with clickable links
-    // Note: Only http:// and https:// URLs are matched, preventing javascript: and data: URIs
+    // Note: Only http:// and https:// URLs are matched, preventing javascript:, data:, and vbscript: URIs
     return escapedText.replace(urlRegex, (url) => {
-        // Additional safety: ensure URL doesn't start with javascript: or data:
+        // Additional safety: ensure URL doesn't start with javascript:, data:, or vbscript:
         const lowerUrl = url.toLowerCase();
-        if (lowerUrl.startsWith('javascript:') || lowerUrl.startsWith('data:')) {
+        if (lowerUrl.startsWith('javascript:') || lowerUrl.startsWith('data:') || lowerUrl.startsWith('vbscript:')) {
             return url; // Return escaped text without making it a link
         }
         return `<a href="${url}" target="_blank" rel="noopener noreferrer">${url}</a>`;
