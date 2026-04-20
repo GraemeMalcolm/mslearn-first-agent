@@ -1,7 +1,7 @@
 ---
 lab:
   title: Continue developing your agent in Visual Studio Code
-  description: Use Visual Studio Code to develop and test and AI agent.
+  description: Use Visual Studio Code to develop and test your agent.
   level: 200
   duration: 20 minutes
   islab: true
