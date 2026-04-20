@@ -102,7 +102,6 @@ Now you're ready to implement the code that will submit prompts to your agent.
 
     ```python
    # Send prompt with full conversation history and get response
-    
    response = self.client.responses.create(
         input=self.conversation_history
    )
