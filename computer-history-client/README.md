@@ -4,7 +4,7 @@ A Python Flask web application for interacting with a Computing History agent pu
 
 ## Prerequisites
 
-- Python 3.8 or higher
+- Python 3.13 or higher
 - Azure CLI (for authentication)
 - A published agent in Microsoft Foundry
 
@@ -45,7 +45,6 @@ A Python Flask web application for interacting with a Computing History agent pu
 ## Features
 
 - **Chat Interface**: Interactive chat UI for conversing with the agent
-- **Image Support**: Attach images to your prompts
 - **Conversation History**: Maintains the last 3 exchanges with the agent
 - **Azure Authentication**: Uses DefaultAzureCredential for secure access
 
@@ -56,7 +55,7 @@ A Python Flask web application for interacting with a Computing History agent pu
 - `templates/index.html` - HTML template for the chat interface
 - `static/style.css` - Styling for the UI
 - `static/script.js` - Client-side JavaScript for interactivity
-- `.env` - Environment variables (create from `.env.example`)
+- `.env` - Environment variables
 - `requirements.txt` - Python dependencies
 
 ## Learning Notes
@@ -65,7 +64,6 @@ The `agent_client.py` file contains the essential code for:
 
 - Connecting to Microsoft Foundry agents using Azure authentication
 - Submitting prompts using the OpenAI Responses API
-- Handling image attachments in prompts
 - Managing conversation history
 - Processing agent responses
 

@@ -43,7 +43,7 @@ Now that you have a connection to your Foundry project, you can access the asset
 While you can use the graphical interface in the Foundry Portal and the Foundry Extension in Visual Studio code to develop and test an agent, eventually you'll want to write and test code. You can use the Azure AI Projects SDK and the OpenAI Responses API to do so.
 
 1. View the **Extensions** pane; and if it is not already installed, install the **Python** extension.
-1. In the **Command Palette**, use the command `python:create environment` (or `python:select interpreter`) to create a new **Venv** environment based on your Python 3.13 installation.
+1. In the **Command Palette**, use the command `python:create environment` (or `python:select interpreter`) to create a new **Venv** environment based on your Python 3.1x installation.
 1. Select the **Explorer** pane, and confirm that a new folder named **.venv** has been created - this contains the runtime files for the Python environment you'll use for your application.
 1. In the **Explorer** pane, make sure the **.venv** folder is <u>not</u> selected, and then add a new file named **agent.py**. This is the code file in which you'll write your Python code.
 1. Switch back to the **AI Toolkit** pane. Then right-click the latest version of the agent and select **View code**. Then when prompted, select the following options:
