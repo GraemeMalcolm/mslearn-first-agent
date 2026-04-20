@@ -45,6 +45,8 @@ A partially completed client application for your agent has been provided. You'l
 
     > **Tip**: If you are prompted to install dependencies, you can install the ones in the *requirements.txt* file in the */computer-history-client* folder; but it's OK if you don't - we'll install them later!
 
+    Wait for the environment to be created.
+
 1. In the **Explorer** pane, navigate to the folder containing the application code files at **/computer-history-client**. The application files include:
     - **.env** (the application configuration file)
     - **agent_client.py** (the code file for the Python code to interact with your agent)
@@ -133,5 +135,30 @@ Now you're ready to test the app with your agent.
 
     The application web site should looks like this:
 
+    ![Screenshot of the agent publishing confirmation message.](./media/client-app.png)
+
 1. Enter a prompt, such as `What was ENIAC?` and view the response.
-1. Follow up with a second prompt, such as `When was it completed?`
+1. Follow up with a second prompt, such as `How does it compare with COLOSSUS?`
+1. When you're finished testing the app, in the terminal pane, enter **CTRL+C** to stop the local web server.
+
+## Summary
+
+In this exercise, you published an agent that you have developed, and implemented a client application that uses it.
+
+## Next steps
+
+This is the third and final exercise in a series of lab exercises. Check out the following training resources to dive deeper into AI app and agent development on Azure:
+
+- [Develop Generative AI apps in Azure](https://aiskillsnavigator.microsoft.com/explore/search/learningpath-83c73f92b07ec44b678fe87608ac5812111e0caacf7308b47afccec1f274ccc4)
+- [Develop AI agents on Azure](https://aiskillsnavigator.microsoft.com/explore/search/learningpath-e479cf28c8a127f98d3d45961214485266d85b486991cebf33fe779fb53a0190)
+- [Develop natural language solutions on Azure](https://aiskillsnavigator.microsoft.com/explore/search/learningpath-37cace5b5d91825002d4c09e3f3f98d9027e1b2a79b490b663684c4703361ca7)
+- [Extract visual insights from data on Azure](https://aiskillsnavigator.microsoft.com/explore/search/learningpath-d0b0e550fda9d8fc957788736aaee66351967ea44dbad310f4f8dae94a21cfa2)
+- [Develop AI Information Extraction solutions on Azure](https://aiskillsnavigator.microsoft.com/explore/search/learningpath-796e69a13e07dffb16c3a979eb65711e5884ecee17cf595f4eb9b604e919a428)
+
+### Clean up
+
+If you have finished exploring Microsoft Foundry, you should delete the resources you have created to avoid unnecessary utilization charges.
+
+1. Open the [Azure portal](https://portal.azure.com){:target="_blank"} at `https://portal.azure.com` and view the contents of the resource group where you deployed the project used in this exercise.
+1. On the toolbar, select **Delete resource group**.
+1. Enter the resource group name and confirm that you want to delete it.

@@ -30,7 +30,8 @@ class AgentClient:
         if not self.agent_endpoint:
             raise ValueError("AGENT_ENDPOINT not found in environment variables")
         
-        # Create OpenAI client authenticated with Azure credentials
+        # Create OpenAI client authenticated with Azure credentials 
+
 
 
         
@@ -59,7 +60,9 @@ class AgentClient:
             assistant_message = ""
 
 
+
             # Send prompt with full conversation history and get response
+
 
 
             
