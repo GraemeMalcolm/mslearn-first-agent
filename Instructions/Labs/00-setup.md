@@ -1,6 +1,6 @@
 ---
 lab:
-  title: Develop your first agent - Setup
+  title: Setup
   description: Prepare to complete the lab.
   level: 200
   duration: 20 minutes
